@@ -12,7 +12,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import dev.shrishri1108.JavaRoomMVVM.Dao.ActorImageDao;
 import dev.shrishri1108.JavaRoomMVVM.Modal.ActorImage;
 
-@Database(entities = {ActorImage.class}, version = 2)
+@Database(entities = {ActorImage.class}, version = 2,exportSchema = false)
 public abstract class ActorDatabase extends RoomDatabase {
     private static final String DATABASE_NAME = "ActorDatabase";
     private static volatile ActorDatabase INSTANCE;

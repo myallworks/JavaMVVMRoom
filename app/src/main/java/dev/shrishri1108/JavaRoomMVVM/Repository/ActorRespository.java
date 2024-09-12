@@ -19,6 +19,7 @@ import dev.shrishri1108.JavaRoomMVVM.Network.Api;
 import dev.shrishri1108.JavaRoomMVVM.Network.Retrofit;
 import retrofit2.Response;
 
+@SuppressWarnings("unchecked")
 public class ActorRespository {
     private final ActorDatabase database;
     private List<ActorWithStoredImage> AllActorsFinalList;
