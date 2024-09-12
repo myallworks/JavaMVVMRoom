@@ -37,7 +37,7 @@
 # Keep Room entities and DAOs
 -keep class androidx.room.** { *; }
 -keep interface androidx.room.* { *; }
--keep class your.package.name.db.** { *; }
+-keep class dev.shrishri1108.JavaRoomMVVM.db.** { *; }
 
 # Keep schema and migration classes
 -keep class androidx.sqlite.db.** { *; }
@@ -46,8 +46,6 @@
 -keep class androidx.** { *; }
 -dontwarn androidx.**
 
-# Keep Kotlin metadata
--keepclassmembers class kotlin.Metadata { *; }
 
 # If you're using coroutines, you might want to keep the suspend functions
 -keep class kotlinx.coroutines.** { *; }
@@ -71,7 +69,7 @@
 
 # Gson rules
 -keep class com.google.gson.** { *; }
--keep class your.package.name.models.** { *; }
+-keep class dev.shrishri1108.JavaRoomMVVM.models.** { *; }
 
 # Keep fields in classes serialized/deserialized by Gson
 -keepclassmembers class ** {
@@ -84,18 +82,18 @@
 -keepattributes *Annotation*
 
 # Retrofit models
--keep class your.package.name.models.** { *; }
+-keep class dev.shrishri1108.JavaRoomMVVM.models.** { *; }
 -keep class retrofit2.Retrofit { *; }
 -keep class retrofit2.converter.gson.GsonConverterFactory { *; }
 
 # Keep native methods
--keepclassmembers class * { 
-    native <methods>; 
+-keepclassmembers class * {
+    native <methods>;
 }
 
 
 # Keep application classes
--keep class your.package.name.** { *; }
+-keep class dev.shrishri1108.JavaRoomMVVM.** { *; }
 
 # Keep specific classes like Activities, Services, etc.
 -keep class * extends android.app.Activity
